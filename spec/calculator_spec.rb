@@ -12,4 +12,10 @@ RSpec.describe Calculator do
       expect(Calculator.new.subtract(3, 2)).to eq(1)
     end
   end
+
+  describe '#multiply' do
+    it 'returns the product of its arguments' do
+      expect(Calculator.new.multiply(2, 3)).to eq(6)
+    end
+  end
 end
