@@ -18,4 +18,10 @@ RSpec.describe Calculator do
       expect(Calculator.new.multiply(2, 3)).to eq(6)
     end
   end
+
+  describe '#divide' do
+    it 'returns the quotient of its arguments' do
+      expect(Calculator.new.divide(4, 2)).to eq(2)
+    end
+  end
 end
